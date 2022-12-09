@@ -9,7 +9,7 @@ import os
 
 
 def check_nmbi_status(user_input):
-    user_input_list = user_input.split(',', maxsplit=1)
+    user_input_list = user_input.split(',', maxsplit=1) # username@email.com, password_text
     if len(user_input_list) != 2:
         return f"Input is incorrect! Please type your username (email address) followed by a comma (,) and password. Example: yourname@email.com,MyPa55word)"
     elif user_input_list[0] == "":
